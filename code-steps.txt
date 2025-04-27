@@ -1,0 +1,6 @@
+Step-1: npx create-expo-app@latest <app-name> --template
+Step-2: cd <app-name>
+Step-3: npm start
+Step-4: install expo go on device
+(Optional) Step-5: cd my-app -> npm run android/ios/web
+Step-6: npx expo start or npx expo start --tunnel
