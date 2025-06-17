@@ -1,6 +1,16 @@
+## Initial Setup
 Step-1: npx create-expo-app@latest <app-name> --template
+	(Select blank typescript)
+# Install dependencies
 Step-2: cd <app-name>
 Step-3: npm start
-Step-4: install expo go on device
-(Optional) Step-5: cd my-app -> npm run android/ios/web
-Step-6: npx expo start or npx expo start --tunnel
+Step-4: npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+# Setup entry point in package.json {"main": "expo-router/entry"}
+# Add scheme in app.json {"scheme": "ecommerce-app"}
+Step-5: npx expo install react-native-web react-dom
+Step-6: npx expo start or npx expo start --tunnel or npx expo start --clear
+
+## Adding gluestack UI
+npx gluestack-ui init  
+npx gluestack-ui add card
+npx gluestack-ui add image text vstack heading box
