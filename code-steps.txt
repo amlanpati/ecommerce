@@ -14,3 +14,4 @@ Step-6: npx expo start or npx expo start --tunnel or npx expo start --clear
 npx gluestack-ui init  
 npx gluestack-ui add card
 npx gluestack-ui add image text vstack heading box
+npx gluestack-ui add useBreakPointValue
