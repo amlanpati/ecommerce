@@ -1,4 +1,24 @@
-## Initial Setup
+### git
+
+git init
+git add .
+git status
+git commit -m ""
+git push -u origin main
+
+
+### api
+
+Step-1: npm init
+	(package name: ecommerce-api)
+Step-2: npm install express
+	npm install -D typescript tsx @types/express
+Step-3: Create tsconfig.json
+Step-4: Create src/index.ts
+
+### ecommerce-mobile
+
+## Initital Setup
 Step-1: npx create-expo-app@latest <app-name> --template
 	(Select blank typescript)
 # Install dependencies
