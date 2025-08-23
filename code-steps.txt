@@ -11,14 +11,69 @@ git push -u origin main
 
 Step-1: npm init
 	(package name: ecommerce-api)
+
 Step-2: npm install express
 	npm install -D typescript tsx @types/express
+
 Step-3: Create tsconfig.json
+	Add this:
+{
+  "compilerOptions": {
+    "module": "ESNext", // Use ESNext for ESM
+    "target": "ES2020", // Target modern ECMAScript versions
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist", // Output directory for compiled files
+    "strict": true, // Enable strict type-checking options
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "resolveJsonModule": true, // Include JSON imports
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false, // Allow emitting output
+    "isolatedModules": true, // Required for using ESM modules
+    "baseUrl": ".", // Allow absolute imports relative to project root
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  }
+}
+
 Step-4: Create src/index.ts
+	Create "Hello World" using express
+
+Step-5: Add "type": "module", in package.json
+	Add these scripts to package.json: 
+	"dev": "node --import=tsx --watch --env-file=.env src/index.ts", 
+	"build": "tsc"
+
+Step-6: npm i drizzle-orm postgres dotenv
+	npm i -D drizzle-kit tsx
+
+Step-7: Create db/index.ts and db/productsSchema.ts
+
+Step-8: Create drizzle.config.ts
+	Add schema in an array
+	Add these to defineConfig:
+	verbose: true,
+  	strict: true,
+
+Step-9: npx drizzle-kit push (for quickly testing new schema designs)
+	Check table by npx drizzle-kit studio
+	Alternatively use: 
+	npx drizzle-kit generate
+	npx drizzle-kit migrate
+Step-10: Add these scripts to package.json:
+	"db:generate": "drizzle-kit generate",
+    	"db:migrate": "drizzle-kit migrate",
+    	"db:studio": "drizzle-kit studio"
+
+
+
+
 
 ### ecommerce-mobile
 
-## Initital Setup
+## Initial Setup
 Step-1: npx create-expo-app@latest <app-name> --template
 	(Select blank typescript)
 # Install dependencies
