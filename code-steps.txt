@@ -67,7 +67,7 @@ Step-10: Add these scripts to package.json:
     	"db:migrate": "drizzle-kit migrate",
     	"db:studio": "drizzle-kit studio"
 
-
+Step-11: Add productsController.ts logic
 
 
 
