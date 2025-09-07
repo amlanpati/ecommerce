@@ -111,6 +111,22 @@ declare global {
   }
 }
 
+Step-15: Create src/db/usersSchema.ts
+	 Add schema in an array to drizzle.config.ts
+	 db:generate
+	 db:migrate
+
+	 * TABLE IF NOT EXISTS
+
+Step-16: Create src/routes/auth/index.ts
+
+Step-17: npm install bcryptjs
+	 npm i --save-dev @types/bcryptjs
+	 npm install jsonwebtoken
+	 npm i --save-dev @types/jsonwebtoken
+
+Step-18: Create src/middlewares/authMiddleware.ts
+
 
 
 
