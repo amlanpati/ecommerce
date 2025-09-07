@@ -15,16 +15,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "dotenv": "^17.2.1",
     "drizzle-orm": "^0.44.4",
     "drizzle-zod": "^0.8.3",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "postgres": "^3.4.7",
     "zod": "^4.1.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
     "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/lodash": "^4.17.20",
     "drizzle-kit": "^0.31.4",
     "tsx": "^4.20.4",
